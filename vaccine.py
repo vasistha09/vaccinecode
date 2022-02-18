@@ -30,4 +30,27 @@ def vacc_check_all(vac_list , childs):
         if b == True:
             count = count + 1
     return (count)
+
+if __name__=="__main__":
+    vac_list = []
+    no_of_vacc = int(input())
+    for i in range(no_of_vacc):
+        vac_id = int(input())
+        vac_name = input()
+        min_age = int(input())
+        max_age =int(input())
+        vac_list.append(vaccine(vac_id,vac_name,min_age,max_age))
+    childs = []
+    no_of_child = int(input())
+    for i in range(no_of_child):
+        name =  input()
+        dob =  input()
+        age =  int(input())
+        vacc_det = {}
+        for i in range(2):
+            vacc_det[int(input())] = 220121
+    today_date = int(input())    
+    
+    a = vacc_check_all(vac_list,childs)
+    print(a)    
     
